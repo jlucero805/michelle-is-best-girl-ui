@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+.main {
+  height: 100vh;
+  width: 100vw;
+  /* background-color: rgb(202, 172, 250); */
+  background-color: hsl(266, 100%, 50%, .6);
+  /* background-color: rgb(238, 238, 238); */
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+  width: 100vw;
+  height: 70px;
+  /* background-color: hsl(266, 100%, 50%); */
+  background-color: rgb(17, 17, 17);
+  color: rgb(238, 238, 238);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.clean {
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content-header {
+  width: 100vw;
+  display: flex;
+}
+
+.btn {
+  width: fit-content;
+  background-color: rgb(17, 17, 17);
+  color: rgb(238, 238, 238);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 1em;
+  margin: 1em;
+}
+
+.content-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.reason {
+  height: 60vh;
+  width: 40vw;
+  border-radius: 5px;
+  background-color: rgb(17, 17, 17);
+  color: rgb(238, 238, 238);
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  overflow-y: auto;
+}
+
+.reason-item {
+  height: fit-content;
+  padding: 1em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  border: 3px solid hsl(266, 100%, 50%, .6);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todays {
+  height: fit-content;
+  padding: 1em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  background-color: hsl(266, 100%, 50%, .6);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.big-title {
+  color: rgb(17, 17, 17);
 }
